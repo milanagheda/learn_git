@@ -1,0 +1,584 @@
+/************************************************
+/*
+/*	Theme : Project Title
+/*	version: 1.0.0	
+/*
+*************************************************/
+/*===== Fonts =====*/
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-regular/OpenSans_gdi.eot");
+  src: url("../fonts/OpenSans-regular/OpenSans_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-regular/OpenSans_gdi.woff") format("woff"), url("../fonts/OpenSans-regular/OpenSans_gdi.ttf") format("truetype"), url("../fonts/OpenSans-regular/OpenSans_gdi.otf") format("opentype"), url("../fonts/OpenSans-regular/OpenSans_gdi.svg#OpenSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("../fonts/OpenSans-Semibold/OpenSans-Semibold_gdi.eot");
+  src: url("../fonts/OpenSans-Semibold/OpenSans-Semibold_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold/OpenSans-Semibold_gdi.woff") format("woff"), url("../fonts/OpenSans-Semibold/OpenSans-Semibold_gdi.ttf") format("truetype"), url("../fonts/OpenSans-Semibold/OpenSans-Semibold_gdi.otf") format("opentype"), url("../fonts/OpenSans-Semibold/OpenSans-Semibold_gdi.svg#OpenSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: 'QuattrocentoSans';
+  src: url("../fonts/QuattrocentoSans/QuattrocentoSans_gdi.eot");
+  src: url("../fonts/QuattrocentoSans/QuattrocentoSans_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/QuattrocentoSans/QuattrocentoSans_gdi.woff") format("woff"), url("../fonts/QuattrocentoSans/QuattrocentoSans_gdi.ttf") format("truetype"), url("../fonts/QuattrocentoSans/QuattrocentoSans_gdi.otf") format("opentype"), url("../fonts/QuattrocentoSans/QuattrocentoSans_gdi.svg#OpenSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: 'QuattrocentoSans-Bold';
+  src: url("../fonts/QuattrocentoSans-Bold/QuattrocentoSans-Bold_gdi.eot");
+  src: url("../fonts/QuattrocentoSans-Bold/QuattrocentoSans-Bold_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/QuattrocentoSans-Bold/QuattrocentoSans-Bold_gdi.woff") format("woff"), url("../fonts/QuattrocentoSans-Bold/QuattrocentoSans-Bold_gdi.ttf") format("truetype"), url("../fonts/QuattrocentoSans-Bold/QuattrocentoSans-Bold_gdi.otf") format("opentype"), url("../fonts/QuattrocentoSans-Bold/QuattrocentoSans-Bold_gdi.svg#OpenSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+/*===== Fonts =====*/
+/* =Reset
+-------------------------------------------------------------- */
+*, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  color: #8d8f92;
+  font-family: "OpenSans-Regular"; }
+
+body {
+  line-height: 1;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  font-weight: 300;
+  color: #8d8f92;
+  background: #fff; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: none; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none; }
+
+del {
+  color: #333; }
+
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 24px;
+  margin-bottom: 1.714285714rem; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+small {
+  font-size: smaller; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  /*max-width: 100%; */ }
+
+a {
+  color: #8d8f92;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+  a:hover, a:focus {
+    color: #23b7a4;
+    text-decoration: none; }
+
+/* Clearing floats */
+.clear:after,
+.wrapper:after,
+.format-status .entry-header:after {
+  clear: both; }
+
+.clear:before,
+.clear:after,
+.wrapper:before,
+.wrapper:after,
+.format-status .entry-header:before,
+.format-status .entry-header:after {
+  display: table;
+  content: ""; }
+
+/* Layout style typography , sections , buttons , blocks , components  */
+/*====== Reset CSS ======*/
+/*====== CMS page ====== */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "QuattrocentoSans-Bold";
+  color: "#292f36";
+  margin: 15px 0;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s; }
+
+h1, .h1 {
+  font-size: 36px;
+  /*Maximum size of the design*/ }
+
+h2, .h2 {
+  font-size: 27px; }
+
+h3, .h3 {
+  font-size: 24px; }
+
+h4, .h4 {
+  font-size: 20px; }
+
+h5, .h5 {
+  font-size: 18px; }
+
+h6, .h6 {
+  font-size: 16px; }
+
+p {
+  color: #8d8f92;
+  font-size: 16px;
+  line-height: normal;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s; }
+
+section {
+  clear: both;
+  float: left;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+ol li,
+ul li {
+  line-height: 1;
+  list-style: disc;
+  margin: 0 0 5px 20px;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s; }
+
+ol li {
+  list-style: decimal; }
+
+ol li ul,
+ul li ul {
+  margin-top: 5px; }
+
+ol li ul li,
+ul li ul li {
+  list-style: circle; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 10px 0;
+  width: 100%; }
+
+table td, table th {
+  border: 1px solid #cccccc;
+  color: #8d8f92;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s; }
+
+table th {
+  color: #8d8f92; }
+
+b {
+  font-weight: bold;
+  color: #8d8f92;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s; }
+
+.checkboxBtn,
+.radioBtn {
+  margin: 10px 0; }
+
+select,
+textarea,
+input {
+  width: 100%;
+  padding: 7px 20px 7px 23px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s; }
+
+*::-webkit-input-placeholder {
+  color: #8d8f92;
+  opacity: 0.8; }
+
+*::-moz-placeholder {
+  color: #8d8f92;
+  opacity: 0.8; }
+
+.left {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 8px; }
+
+.right {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 8px; }
+
+/*====== End CMS page ====== */
+.main-wrapper {
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  max-width: 1140px;
+  width: auto; }
+
+.bg-place-holder {
+  background-position: 0 0 !important;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) and (max-width: 1026px) {
+    .bg-place-holder {
+      background-position: center !important; } }
+  @media (max-width: 767px) {
+    .bg-place-holder {
+      background-position: center !important; } }
+
+/*
+ * 	Core Owl Carousel CSS File
+ */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y; }
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+.owl-carousel .owl-item {
+  float: left; }
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer; }
+
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; }
+
+/* mouse grab icon */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move; }
+
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
+/*
+* 	Owl Carousel Owl Demo Theme
+*	v1.3.3
+*/
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center; }
+
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5; }
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none; }
+
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */ }
+
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791; }
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1; }
+
+/* If PaginationNumbers is true */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center; }
+
+/*
+ * 	Core Owl Carousel CSS File
+ */
+/*===== Header =====*/
+header {
+  float: left;
+  width: 100%;
+  -webkit-transition: all 0.5s eace-in;
+  -moz-transition: all 0.5s eace-in;
+  -o-transition: all 0.5s eace-in;
+  -ms-transition: all 0.5s eace-in;
+  transition: all 0.5s eace-in;
+  min-height: 81px;
+  background-color: #1d2126;
+  padding: 26px 0 0; }
+  header .logo {
+    float: left;
+    margin-top: 5px; }
+  header .desktop-navigation {
+    float: right; }
+    header .desktop-navigation nav, header .desktop-navigation ul, header .desktop-navigation li, header .desktop-navigation a {
+      float: left;
+      list-style: none;
+      color: #a4aead;
+      font-size: 14px;
+      font-family: "OpenSans-Semibold";
+      text-transform: uppercase;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+    header .desktop-navigation li {
+      margin: 0 10px;
+      padding: 0; }
+      header .desktop-navigation li a {
+        padding: 6px 15px;
+        border: 2px solid transparent;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */ }
+      header .desktop-navigation li a:hover {
+        border-color: #23b7a4;
+        color: #23b7a4; }
+    header .desktop-navigation li:last-child {
+      margin-right: 0; }
+
+/*===== End Header =====*/
+/*===== Slider ====*/
+.landing-slider-wrapper {
+  width: 100%;
+  float: left; }
+  .landing-slider-wrapper ul, .landing-slider-wrapper li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 100%;
+    height: 100%; }
+  .landing-slider-wrapper li img {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
+  .landing-slider-wrapper li .container {
+    height: 100%; }
+  .landing-slider-wrapper li .landig-intro {
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    .landing-slider-wrapper li .landig-intro h1 {
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #fff; }
+
+/*===== Slider ====*/
+/*===== Footer =====*/
+/*===== End Footer =====*/
+/************************************************
+/*
+/*	Theme : Project Title
+/*	version: 1.0.0	
+/*
+*************************************************/
